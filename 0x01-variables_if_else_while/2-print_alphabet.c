@@ -18,5 +18,6 @@ int main(void)
 		/* increment value by 1 */
 		alphabet++;
 	}
+	putchar('\n');
 	return (0);
 }
