@@ -1,4 +1,4 @@
-#include <stdlib.h>
+i#include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
 
@@ -23,7 +23,7 @@ int main(void)
 				putchar((num1 % 10) + 48);
 				putchar(' ');
 				putchar((num2 / 10) + 48);
-				putchar((num2 / 10) + 48);
+				putchar((num2 % 10) + 48);
 				/* check that highest numbers have been reached */
 				if (num1 != 98 || num2 != 99)
 				{
