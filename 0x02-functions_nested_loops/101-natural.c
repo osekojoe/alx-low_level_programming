@@ -28,4 +28,4 @@ int main(void)
 	sum = sum_of_3 + sum_of_5;
 	printf("%lu\n", sum);
 	return (0);
-i}
+}
