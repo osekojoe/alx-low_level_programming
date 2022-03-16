@@ -2,7 +2,7 @@
 
 /**
  * main - fibonacci
- * Description: prints the first 50 Fibonacci numbers, 
+ * Description: prints the first 50 Fibonacci numbers,
  * starting with 1 and 2
  * Return: Always 0
  */
