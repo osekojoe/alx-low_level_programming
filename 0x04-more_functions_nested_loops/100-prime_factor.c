@@ -12,7 +12,7 @@ int main(void)
 	n = 612852475143;
 	i = 2; /* smallest prime number*/
 
-	while (i < n && n > 1)
+	while (i <= 612852475143 && n > 1)
 	{
 		prime = i;
 		if ((n % prime) == 0)
