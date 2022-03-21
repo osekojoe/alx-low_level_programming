@@ -17,7 +17,7 @@ int main(void)
 
 	for (i = 0; i < 100; i++)
 	{
-		pass[i] = rand() % 78;
+		pwd[i] = rand() % 78;
 		k += (pwd[i] + '0');
 		putchar(pwd[i] + '0');
 		if ((2772 - k) - '0' < 78)
