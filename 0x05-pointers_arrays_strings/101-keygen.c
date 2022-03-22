@@ -1,26 +1,33 @@
 #include <stdio.h>
-#include <time.h>
 #include <stdlib.h>
+#include <time.h>
 
 /**
- * main - random password
- * Return: None
+ * main - generates random valid passwords
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int i, pwd_length;
-	char pwd[100];
+	int pwd[100];
+	int i, j, k;
+
+	k = 0;
 
 	srand(time(NULL));
 
-	pwd_length = 100;
-	for (i = 0; i < pwd_length; i++)
+	for (i = 0; i < 100; i++)
 	{
-		/* ASCII non-white space range from 33 to 126*/
-		pwd[i] = 33 + rand() % 94;
+		pwd[i] = rand() % 78;
+		k += (pwd[i] + '0');
+		putchar(pwd[i] + '0');
+		if ((2772 - k) - '0' < 78)
+		{
+			j = 2772 - k - '0';
+			k += j;
+			putchar(j + '0');
+			break;
+		}
 	}
-	pwd[i] = '\0';
-	printf("%s\n", pwd);
+
 	return (0);
 }
-
