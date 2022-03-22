@@ -21,5 +21,6 @@ int main(void)
 	}
 	pwd[i] = '\0';
 	printf("%s\n", pwd);
+	return (0);
 }
 
