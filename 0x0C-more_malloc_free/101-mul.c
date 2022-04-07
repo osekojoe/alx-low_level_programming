@@ -2,19 +2,19 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-int str_len(char *str);
+int find_len(char *str);
 char *create_xarray(int size);
 char *iterate_zeroes(char *str);
 void get_prod(char *prod, char *mult, int digit, int zeroes);
 void add_nums(char *final_prod, char *next_prod, int next_len);
 
 /**
- * str_len - gets the length of a string.
- * @str: string
+ * find_len - Finds the length of a string.
+ * @str: The string to be measured.
  *
- * Return: string length in int.
+ * Return: The length of the string.
  */
-int str_len(char *str)
+int find_len(char *str)
 {
 	int len = 0;
 
@@ -36,17 +36,17 @@ int str_len(char *str)
 char *create_xarray(int size)
 {
 	char *array;
-	int i;
+	int index;
 
 	array = malloc(sizeof(char) * size);
 
 	if (array == NULL)
 		exit(98);
 
-	for (i = 0; i < (size - 1); i++)
-		array[i] = 'x';
+	for (index = 0; index < (size - 1); index++)
+		array[index] = 'x';
 
-	array[i] = '\0';
+	array[index] = '\0';
 
 	return (array);
 }
@@ -230,4 +230,3 @@ int main(int argc, char *argv[])
 
 	return (0);
 }
-
