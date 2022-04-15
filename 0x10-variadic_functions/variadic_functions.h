@@ -17,7 +17,7 @@ void print_str(va_list list);
  *  * struct printTypeStruct - structure definition of a printTypeStruct
  *   * @type: type
  *    * @printer: function to print
- *     */
+ */
 typedef struct printTypeStruct
 {
 	char *type;
