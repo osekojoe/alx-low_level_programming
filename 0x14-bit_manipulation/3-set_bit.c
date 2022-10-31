@@ -1,4 +1,4 @@
-#include "main.h"
+i#include "main.h"
 
 /**
 * set_bit - sets bit value at a given index
@@ -14,7 +14,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 		return (-1);
 
 	i = 1 << index;
-	*i = (*n | i);
+	*n = (*n | i);
 
 	return (1);
 }
