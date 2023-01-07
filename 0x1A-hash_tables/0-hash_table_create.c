@@ -3,22 +3,22 @@
 /**
 * hash_table_create - creates a hash table
 * @size: size of array
-* Return: pointer to the newly created hash table
+* Return: created hash table
 */
 hash_table_t *hash_table_create(unsigned long int size)
 {
-	hash_table_t *hashTable = NULL;
+	hash_table_t *ht = NULL;
 
-	hashTable = malloc(sizeof(hash_table_t));
-	if (hashTable == NULL)
+	ht = malloc(sizeof(hash_table_t));
+	if (ht == NULL)
 		return (NULL);
 
-	hashTable->size = size;
-	hashTable->array = malloc(sizeof(hash_table_t *) * size);
-	if (hashTable->array == NULL)
+	ht->size = size;
+	ht->array = malloc(sizeof(hash_table_t *) * size);
+	if (ht->array == NULL)
 	{
-		free(hashTable);
+		free(ht);
 		return (NULL);
 	}
-	return (hashTable);
+	return (ht);
 }
