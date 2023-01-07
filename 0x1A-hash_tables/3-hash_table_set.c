@@ -1,14 +1,14 @@
 #include "hash_tables.h"
 
 /**
- * add_n_hash - adds a node at the beginning of a hash at a given index
+ * add_h_node - adds a node at the beginning of a hash at a given index
  *
  * @head: head of the hash linked list
  * @key: key of the hash
  * @value: value to store
  * Return: head of the hash
  */
-hash_node_t *add_hash_node(hash_node_t **head, const char *key, const char *value)
+hash_node_t *add_h_node(hash_node_t **head, const char *key, const char *value)
 {
 	hash_node_t *tmp;
 
@@ -58,7 +58,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	k_idx = key_index((unsigned char *)key, ht->size);
 
-	if (add_hash_node(&(ht->array[k_idx]), key, value) == NULL)
+	if (add_h_node(&(ht->array[k_idx]), key, value) == NULL)
 		return (0);
 
 	return (1);
