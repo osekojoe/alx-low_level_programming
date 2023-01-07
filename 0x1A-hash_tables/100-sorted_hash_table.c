@@ -27,7 +27,7 @@ shash_table_t *shash_table_create(unsigned long int size)
 * add_n_shash - add node at begining of shash at given index
 * @h: head of list
 * @key: hash key
-* value: hash value
+* @value: hash value
 * Return: created node
 */
 shash_node_t *add_n_shash(shash_node_t **h, const char *key, const char *value)
@@ -49,7 +49,7 @@ shash_node_t *add_n_shash(shash_node_t **h, const char *key, const char *value)
 
 	tmp = malloc(sizeof(shash_node_t));
 	if (tmp == NULL)
-        	return (NULL);
+		return (NULL);
 
 	tmp->key = strdup(key);
 	tmp->value = strdup(value);
