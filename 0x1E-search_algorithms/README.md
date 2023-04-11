@@ -1,0 +1,3 @@
+- 0x1E. C - Search Algorithms
+- [Search algorithm](https://en.wikipedia.org/wiki/Search_algorithm)<br>
+- [Space complexity (1)](https://www.geeksforgeeks.org/g-fact-86/)
